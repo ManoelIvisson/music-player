@@ -4,21 +4,24 @@ import { Text, IconButton } from 'react-native-paper';
 type Props = {
   img: ImageSourcePropType;
   nome: String;
-  tempo: String;
   autor: String;
 }
 
-export default function Musica({img, nome, tempo, autor}: Props) {
+export default function MusicaSelecionada({img, nome, autor}: Props) {
   return (
     <View style={styles.painel}>
         <View style={styles.musicaInfo}>
-          <Image style={styles.musica} source={img} />
-          <View>
-            <Text style={styles.texto}>{nome}</Text>
-            <Text variant='labelSmall' style={styles.texto}>{autor}</Text>
-          </View>
+            <Image style={styles.musica} source={img} />
+            <View>
+                <Text style={styles.texto}>{nome}</Text>
+                <Text variant='labelSmall' style={styles.texto}>{autor}</Text>
+            </View>
         </View>
-        <Text style={styles.texto}>{tempo}</Text>
+        <View style={styles.musicaSelecionada}>
+            <IconButton icon={"skip-previous"} iconColor='white'/>
+            <IconButton icon={"play"} iconColor='white'/>
+            <IconButton icon={"skip-next"} iconColor='white'/>
+        </View>
     </View>
   );
 }
@@ -28,7 +31,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: "#3D3E40",
     width: '100%',
     padding: 10,
     borderTopWidth: 2,
@@ -44,5 +46,8 @@ const styles = StyleSheet.create({
   musicaInfo: {
     flexDirection: 'row',
     gap: 10
+  },
+  musicaSelecionada: {
+    flexDirection: 'row'
   }
 }) 

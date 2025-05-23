@@ -8,7 +8,7 @@ export default function AlbumMenu() {
           <IconButton icon={"menu"} iconColor='white' />
           <View>
             <Text variant='titleMedium' style={styles.texto}>Álbum</Text>
-            <Text variant='labelMedium' style={styles.texto}>22 Músicas</Text>
+            <Text variant='labelMedium' style={styles.texto}>5 Músicas</Text>
           </View>
         </View>
         <View style={styles.subArea}>
@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: "#0E0A73",
-    width: 300,
     padding: 10
   },
   texto: {
