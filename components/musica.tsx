@@ -3,14 +3,15 @@ import { Text, IconButton } from 'react-native-paper';
 
 type Props = {
   img: ImageSourcePropType;
-  nome: String;
-  tempo: String;
-  autor: String;
+  nome: string;
+  tempo: string;
+  autor: string;
+  onTouch: (nome: string, img: ImageSourcePropType, autor: string) => void;
 }
 
-export default function Musica({img, nome, tempo, autor}: Props) {
+export default function Musica({img, nome, tempo, autor, onTouch}: Props) {
   return (
-    <View style={styles.painel}>
+    <View style={styles.painel} onTouchStart={() => onTouch(nome, img, autor)}>
         <View style={styles.musicaInfo}>
           <Image style={styles.musica} source={img} />
           <View>
