@@ -14,7 +14,6 @@ export default function AlbumMusicas() {
     setNome(nome)
     setImg(img)
     setAutor(autor)
-    // alert("wq")
   } 
 
   return (
