@@ -38,18 +38,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: "#0E0A73",
-  },
-  texto: {
-    color: 'white'
-  },
-  musica: {
-    
+    backgroundColor: "white",
+    width: '100%'
   },
   musicas: {
     flex: 2,
     flexDirection: 'column',
-    backgroundColor: "#675DA6"
+    backgroundColor: "white",
+    width: '100%'
   },
   musicaSelecionada: {
     flex: 1 / 3,

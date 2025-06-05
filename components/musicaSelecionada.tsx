@@ -18,9 +18,9 @@ export default function MusicaSelecionada({img, nome, autor}: Props) {
             </View>
         </View>
         <View style={styles.musicaSelecionada}>
-            <IconButton icon={"skip-previous"} iconColor='white'/>
-            <IconButton icon={"play"} iconColor='white'/>
-            <IconButton icon={"skip-next"} iconColor='white'/>
+            <IconButton icon={"skip-previous"} iconColor='#0E0A73'/>
+            <IconButton icon={"play"} iconColor='#0E0A73'/>
+            <IconButton icon={"skip-next"} iconColor='#0E0A73'/>
         </View>
     </View>
   );
@@ -28,16 +28,17 @@ export default function MusicaSelecionada({img, nome, autor}: Props) {
 
 const styles = StyleSheet.create({
   painel: {
+    flex: 3,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    // alignItems: 'center',
     width: '100%',
     padding: 10,
     borderTopWidth: 2,
     borderColor: "#675DA6"
   },
   texto: {
-    color: 'white'
+    color: 'black'
   },
   musica: {
     width: 50,

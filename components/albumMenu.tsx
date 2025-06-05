@@ -5,15 +5,15 @@ export default function AlbumMenu() {
   return (
     <View style={styles.album}>
         <View style={styles.subArea}>
-          <IconButton icon={"menu"} iconColor='white' />
+          <IconButton icon={"menu"} iconColor='black' />
           <View>
             <Text variant='titleMedium' style={styles.texto}>Álbum</Text>
             <Text variant='labelMedium' style={styles.texto}>5 Músicas</Text>
           </View>
         </View>
         <View style={styles.subArea}>
-          <IconButton icon={"magnify"} iconColor='white'/>
-          <IconButton icon={"dots-vertical"} iconColor='white'/>
+          <IconButton icon={"magnify"} iconColor='black'/>
+          <IconButton icon={"dots-vertical"} iconColor='black'/>
         </View>
     </View>
   );
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: "#0E0A73",
+    backgroundColor: "white",
     padding: 10
   },
   texto: {

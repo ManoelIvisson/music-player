@@ -29,14 +29,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: "#3D3E40",
+    backgroundColor: "white",
     width: '100%',
     padding: 10,
     borderTopWidth: 2,
     borderColor: "#675DA6"
   },
   texto: {
-    color: 'white'
+    color: 'black'
   },
   musica: {
     width: 50,
