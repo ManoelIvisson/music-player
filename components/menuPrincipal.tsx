@@ -5,13 +5,13 @@ export default function MenuPrincipal() {
   return (
     <View style={styles.album}>
         <View style={styles.subArea}>
-          <IconButton icon={"menu"} iconColor='white' />
+          <IconButton icon={"menu"} iconColor='black' />
         </View>
         <View>
-          <Text variant='bodyMedium' >Music Player</Text>
+          <Text variant='bodyMedium' style={styles.texto}>Music Player</Text>
         </View>
         <View style={styles.subArea}>
-          <IconButton icon={"magnify"} iconColor='white'/>
+          <IconButton icon={"magnify"} iconColor='black'/>
         </View>
     </View>
   );
@@ -23,12 +23,10 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: "#0E0A73",
-    // padding: 10,
-    // minWidth: 400,
+    backgroundColor: "white"
   },
   texto: {
-    color: 'white'
+    // color: 'black'
   },
   subArea: {
     flexDirection: 'row'

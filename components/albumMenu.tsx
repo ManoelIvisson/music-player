@@ -1,11 +1,14 @@
+import { useRouter } from 'expo-router';
 import { View, StyleSheet } from 'react-native';
 import { Text, IconButton } from 'react-native-paper';
 
 export default function AlbumMenu() {
+  const router = useRouter();
+
   return (
     <View style={styles.album}>
         <View style={styles.subArea}>
-          <IconButton icon={"menu"} iconColor='black' />
+          <IconButton onPress={() => router.navigate("/")} icon={"menu"} iconColor='black' />
           <View>
             <Text variant='titleMedium' style={styles.texto}>Álbum</Text>
             <Text variant='labelMedium' style={styles.texto}>5 Músicas</Text>
